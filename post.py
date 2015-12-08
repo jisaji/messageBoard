@@ -26,5 +26,6 @@ else:
         }
     )
     print("<h1>New Message Successful</h1>")
+print('<a href="home.py">Go Back</a>')
 print("</body>")
 print("</html>")
