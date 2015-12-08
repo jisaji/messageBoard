@@ -15,8 +15,12 @@ print("<html>")
 print("<header><title>Message Board</title></header>")
 print("<body>")
 print("<h1>Welcome to the message board!</h1>")
-if "userName" not in form or "messageText" not in form:
-    print("<h1>Error, please put userName and messageText in form</h1>")
+if "userName" not in form and "messageText" not in form:
+    print("<p>Error, please specify a Name and Message</p>")
+elif "userName" not in form:
+    print("<p>Error, please specify a Name</p>")
+elif "messageText" not in form:
+    print("<p>Error, please specify a Message</p>")
 else:
     response = table.put_item(
         Item={
